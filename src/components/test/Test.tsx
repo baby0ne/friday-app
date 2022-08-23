@@ -12,8 +12,12 @@ export const Test: React.FC<PropsType> = (props) => {
 
    } = props;
 
+   const onClickHandler = () => {
+      alert('test')
+   }
+
    return <>
-      <SuperButton >test</SuperButton>
+      <SuperButton onClick={onClickHandler}>test</SuperButton>
       <SuperInputText />
       <SuperCheckbox />
    </>
